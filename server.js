@@ -206,7 +206,7 @@ app.delete("/api/v1/faculty/:id", (req, res) => {
 // START SERVER
 // ==============================
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
 
